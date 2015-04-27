@@ -1,7 +1,9 @@
- ☐ location-based brewery view upon first visit
+ ☐ list of breweries to be checkmarked to save upon page visit, created by looping/mapping over breweries array, setting the name to the text for checkbox, and creating a checkbox for each item
+ ☐ When box is checked, info for brewery appears under Saved Locations
  ☐ Ability to see new updates from listed breweries regarding beer or events
  ☐ Ability to favorite breweries and see their updates first via checkmark
  ☐ Filtering: Initial 'favorite' brewery list is by most recently updated. Also can be sorted alphabetically
  ☐ Welcome message for first visit -- Describing product and process (Adding breweries to saved items)
  ☐ Use Templating for displaying breweries added to favorites?
  ☐ Parse and remove any dupicate data
+ ☐ 'Im a brewery' option to add brewery and have it autopopulate checkbox list

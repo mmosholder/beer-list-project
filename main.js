@@ -51,12 +51,10 @@ BreweryLibrary.prototype.render = function () {
     return this.el;
 };
 
-// Render checkboxes with names of breweries 
-// BreweryLibrary.prototype.checkboxes = function () {
-//     var checklist = this.breweries.map(function (brewery) {
-//         this.breweries.name
-//     });
-// };
+BreweryLibrary.prototype.setNamesCheckbox = function (brewery) {
+    var breweryCheckbox = $('#')
+};
+
 
 // Initialize a new brewery library
 var beerLibrary = new BreweryLibrary();
@@ -83,9 +81,10 @@ var greatDivide = new Brewery (
 );
 // Add static breweries to brewery library
 beerLibrary.addBrewery(avery);
-beerLibrary.addBrewery(wildwoods);
-beerLibrary.addBrewery(suns);
-beerLibrary.addBrewery(greatDivide);
+// beerLibrary.addBrewery(wildwoods);
+// beerLibrary.addBrewery(suns);
+// beerLibrary.addBrewery(greatDivide);
 
+beerLibrary.setNamesCheckbox(avery);
 //Render library to page
-$('.content').append(beerLibrary.render());
+$('.content').prepend(beerLibrary.render());
