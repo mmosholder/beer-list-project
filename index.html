@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Brewsr | Brewery Updater</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <header class="main-header">
+      <h2 class="container">Brewsr</h2>
+    </header>
+
+    <div class="content container">
+
+      <div id="templates">
+        <div id="library-tpl"> <!-- Library template holding single location items -->
+          <h3>Choose your favorite breweries</h3>
+          <form class="beer-chooser-form">
+            <div class="checkbox">
+              <label>
+                <input id="brewery1" type="checkbox"> Brewery 1
+              </label>
+              <label>
+                <input id="brewery2" type="checkbox"> Brewery 2
+              </label>
+              <label>
+                <input id="brewery3" type="checkbox"> Brewery 3
+              </label>
+              <label>
+                <input id="brewery4" type="checkbox"> Brewery 4
+              </label>
+              <label>
+                <input id="brewery4" type="checkbox"> Brewery 5
+              </label>
+              <label>
+                <input id="brewery4" type="checkbox"> Brewery 6
+              </label>
+              <label>
+                <input id="brewery4" type="checkbox"> Brewery 7
+              </label>
+              <label>
+                <input id="brewery4" type="checkbox"> Brewery 8
+              </label>
+              <button class="btn form-btn" type="submit" id="checkbox-submit">Save Brewery Preferences</button>
+            </div>
+          </form>
+          <ul class="location-list"></ul>
+        </div>
+
+        <li id="saved-location-tpl"> <!-- Template for list of single location -->
+          <div class="saved-location-wrapper">
+            <h2 class="brewery-name">Brewery Name</h2>
+            <h3 class="brewery-location">Location</h3>
+            <p class="updates">Updates</p>
+          </div>
+        </li>
+      </div> <!-- end Templates -->
+
+     <!--  <form class="location-form">
+        <input type="text" name="location" class="location-input form-control" placeholder="Enter your location to find breweries near you">
+      </form> -->
+
+      <div class="brewery-container row">
+        <div class="saved-locations col-sm-8">
+          <h4>Your Saved Locations</h4>
+        </div>
+
+        <div class="general-locations col-sm-4">
+          <h4>What's up near you</h4>
+        </div>
+      </div>
+
+    </div> <!-- End Content -->
+
+    <footer class="main-footer">
+    </footer>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

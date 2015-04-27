@@ -1,0 +1,23 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.main-header {
+    border-bottom: 5px solid #333;
+}
+.main-header h2 {
+    padding: 40px 5px 5px 5px;
+}
+#templates {
+    display: none;
+}
+.beer-chooser-form label {
+    display: block;
+    padding: 5px 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.checkbox {
+    margin: 5px 0;
+}
