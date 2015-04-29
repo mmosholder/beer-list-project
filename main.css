@@ -1,15 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:700);
 * {
     font-family: 'Roboto', sans-serif;
 }
 .main-header {
     border-bottom: 5px solid #333;
+    margin-bottom: 10px;
+    background-color: #7bfccf;
 }
-.main-header h2 {
+.main-header h1 {
     padding: 40px 5px 5px 5px;
+    font-family: 'Dosis', sans-serif;
+    margin-top: 0;
+    color: #333;
+    display: inline-block;
+}
+.beer-icon {
+    width: 30px;
+    margin-top: -20px;
+}
+.add-brewery {
+    font-size: 16px;
+    float: right;
+    padding: 40px 5px 5px 5px;
+    color: #333;
+}
+.add-brewery .fa {
+    padding: 0 5px;
 }
 #templates,
 #checklist-item {
     display: none;
+}
+.brewery-library h2 {
+    margin-bottom: 10px;
 }
 .beer-chooser-form label {
     display: block;
@@ -18,7 +41,49 @@
 ul {
     list-style: none;
     padding-left: 0;
+    box-shadow: 1px 1px 3px #999;
+}
+ul li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(250,250,250,.9);
+}
+.checkbox-container {
+    background-color: rgba(250,250,250,.9);
+    box-shadow: 1px 1px 3px #ccc;
+    padding: 10px;
 }
 .checkbox {
-    margin: 5px 0;
+    margin: 5px 0 5px 40px;
+}
+.form-btn {
+    margin: 15px 0;
+    border-radius: 0;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    background-color: #4EB0C9;
+    color: #fff;
+}
+.logo {
+    display: inline-block;   
+}
+.logo-img {
+    width: 40px;
+}
+.name-location {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left:10px;
+}
+.brewery-name {
+    font-size: 16px;
+}
+.brewery-name:after {
+    content: " | ";
+    font-size: 24px;
+}
+.brewery-location {
+    font-size: 16px;
 }

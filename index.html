@@ -4,43 +4,53 @@
     <meta charset="utf-8">
     <title>Brewsr | Brewery Updater</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
 
     <header class="main-header">
-      <h2 class="container">Brewsr</h2>
+      <div class="container">
+        <h1><img class="beer-icon" src="beer-icon.png" />BREWSR</h1>
+        <!-- <a class="add-brewery"><i class="fa fa-plus"></i>Add a Brewery</a> -->
+      </div>
     </header>
 
     <div class="content container">
-
       <div id="templates">
-        <div id="library-tpl"> <!-- Library template holding single location items -->
-          
-          <div class="col-sm-5">
-            <h3>Choose your favorite breweries</h3>
-            <form class="beer-chooser-form">
-              <div class="checkbox">
-                <label id="checklist-item">
-                  <input id="brewery-list-name" type="checkbox"> <span class="checkbox-brewery-name">Brewery Name</span>
-                </label>
-                <button class="btn form-btn" type="submit" id="checkbox-submit">Save Brewery Preferences</button>
-              </div>
-            </form>
+        <div id="library-tpl"> <!-- Library template holding single location items --> 
+          <div class="col-sm-3">
+            <h2>Favorites?</h2>
+            <div class="checkbox-container">
+              <form class="beer-chooser-form">
+                <div class="checkbox">
+                  <label id="checklist-item">
+                    <input class="brewery-list-name" type="checkbox"> <span class="checkbox-brewery-name">Brewery Name</span>
+                  </label>
+                </div>
+                <button class="form-btn" type="submit" id="checkbox-submit">Beer Me!</button>
+              </form>
+            </div> 
           </div>
-
-          <div class="saved-locations col-sm-7">
-            <h3>Your Saved Locations</h3>
-            <ul class="location-list"></ul>
+          <div class="saved-locations col-sm-offset-1 col-sm-8">
+            <h2>Saved Locations</h2>
+            <ul class="saved-list"></ul>
+            <h2>Updates</h2>
+            <ul class="locations-list"></ul>
           </div>
         </div><!--end library template -->
 
         <li id="saved-location-tpl"> <!-- Template for list of single location -->
           <div class="saved-location-wrapper">
-            <h2 class="brewery-name">Brewery Name</h2>
-            <h3 class="brewery-location">Location</h3>
-            <p class="updates">Updates</p>
+            <div class="logo">
+              <img class="logo-img" src="" />
+            </div>
+            <div class="name-location">
+              <span class="brewery-name">Brewery Name</span>
+              <span class="brewery-location">Location</span>  
+              <p class="updates">Updates</p>
+            </div>  
           </div>
         </li>
       </div> <!-- end Templates -->
