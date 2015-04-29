@@ -20,7 +20,7 @@
     <div class="content container">
       <div id="templates">
         <div id="library-tpl"> <!-- Library template holding single location items --> 
-          <div class="col-sm-3">
+          <div class="col-sm-3 favorites-container">
             <h2>Favorites?</h2>
             <div class="checkbox-container">
               <form class="beer-chooser-form">
@@ -34,7 +34,10 @@
             </div> 
           </div>
           <div class="saved-locations col-sm-offset-1 col-sm-8">
-            <h2>Saved Locations</h2>
+            <div class="saved-title-bar">
+              <h2>Saved Locations</h2>
+              <div class="edit-favorites"><i class="fa fa-pencil"></i>Edit Favorites</div>
+            </div>
             <ul class="saved-list"></ul>
             <h2>Updates</h2>
             <ul class="locations-list"></ul>
@@ -49,7 +52,7 @@
             <div class="name-location">
               <span class="brewery-name">Brewery Name</span>
               <span class="brewery-location">Location</span>  
-              <p class="updates">Updates</p>
+              <span class="updates">All Updates</span>
             </div>  
           </div>
         </li>

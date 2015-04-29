@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:700);
 * {
     font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 .main-header {
     border-bottom: 5px solid #333;
@@ -13,6 +14,8 @@
     margin-top: 0;
     color: #333;
     display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 .beer-icon {
     width: 30px;
@@ -33,6 +36,8 @@
 }
 .brewery-library h2 {
     margin-bottom: 10px;
+    display: inline-block;
+    text-shadow: 1px 1px 3px #ccc;
 }
 .beer-chooser-form label {
     display: block;
@@ -66,6 +71,22 @@ ul li {
     background-color: #4EB0C9;
     color: #fff;
 }
+.edit-favorites {
+    display: none;
+    float: right;
+    margin-top: 25px;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px #ccc;
+}
+.edit-favorites .fa {
+    padding: 5px;
+}
+.saved-locations .col-sm-12 {
+    padding: 0 5px;
+}
+.saved-title-bar h2 {
+    display: inline-block;
+}
 .logo {
     display: inline-block;   
 }
@@ -76,6 +97,7 @@ ul li {
     display: inline-block;
     vertical-align: middle;
     padding-left:10px;
+    width: 93%;
 }
 .brewery-name {
     font-size: 16px;
@@ -87,3 +109,15 @@ ul li {
 .brewery-location {
     font-size: 16px;
 }
+.updates {
+    float: right;
+}
+.content {
+    margin-bottom: 20px;
+}
+/*.main-footer {
+    background-color: rgba(123, 252, 207, .9);
+    height: 30px;
+    display: block;
+    overflow: hidden;
+}*/
