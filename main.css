@@ -30,12 +30,17 @@
 .add-brewery .fa {
     padding: 0 5px;
 }
+
+/************************************
+Content Classes
+**************************************/
 #templates,
 #checklist-item {
     display: none;
 }
 .brewery-library h2 {
     margin-bottom: 10px;
+    padding: 3px;
     display: inline-block;
     text-shadow: 1px 1px 3px #ccc;
 }
@@ -62,14 +67,21 @@ ul li {
     margin: 5px 0 5px 40px;
 }
 .form-btn {
-    margin: 15px 0;
+    margin-top: 15px;
     border-radius: 0;
     display: block;
     border: none;
     width: 100%;
     padding: 6px;
-    background-color: #4EB0C9;
+    background-color: #736FFE;
+    text-transform: uppercase;
     color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.form-btn:hover {
+    background: #0998E5;
 }
 .edit-favorites {
     display: none;
@@ -78,13 +90,20 @@ ul li {
     font-size: 16px;
     text-shadow: 1px 1px 3px #ccc;
 }
+.edit-favorites:hover {
+    border-bottom: 3px solid #736ffe;
+}
 .edit-favorites .fa {
     padding: 5px;
+    color: #736FFE;
 }
 .saved-locations .col-sm-12 {
     padding: 0 5px;
 }
-.saved-title-bar h2 {
+.saved-list-container {
+    display: none;
+}
+.saved-list-container h2 {
     display: inline-block;
 }
 .logo {
@@ -115,9 +134,3 @@ ul li {
 .content {
     margin-bottom: 20px;
 }
-/*.main-footer {
-    background-color: rgba(123, 252, 207, .9);
-    height: 30px;
-    display: block;
-    overflow: hidden;
-}*/

@@ -1,14 +1,21 @@
- ☐ list of breweries to be checkmarked to save upon page visit, created by looping/mapping over breweries array, setting the name to the text for checkbox, and creating a checkbox for each item
+ ✔ list of breweries to be checkmarked to save upon page visit, created by looping/mapping over breweries array, setting the name to the text for checkbox, and creating a checkbox for each item @done (15-04-30 11:50)
  ✔ When box is checked, info for brewery appears under Saved Locations @done (15-04-29 16:56)
- ☐ Ability to see new updates from listed breweries regarding beer or events
- ☐ Ability to favorite breweries and see their updates first via checkmark
- ☐ Filtering: Initial 'favorite' brewery list is by most recently updated. Also can be sorted alphabetically
- ☐ Welcome message for first visit -- Describing product and process (Adding breweries to saved items)
- ☐ Use Templating for displaying breweries added to favorites?
- ☐ Parse and remove any dupicate data
- ☐ 'Im a brewery' option to add brewery and have it autopopulate checkbox list
- ☐ Populate multiple breweries and updates
+ ✔ Ability to favorite breweries and see their updates first via checkmark @done (15-04-30 11:49)
+ ✔ Filtering: simulate 'update' with keypress and render the update @done (15-04-30 11:50)
+ ✔ Use Templating for displaying breweries added to favorites? @done (15-04-30 11:50)
  ✔ Add icons for each brewery @done (15-04-29 14:55)
  ✔ Create clone method for rendering, basically creates and array of clones that have a reference -- for displaying Favorites and Updates @done (15-04-29 14:55)
  ✔ dismiss 'Choose beer' box upon form submit (display column class changes to 12, Choose beer is hidden); @done (15-04-29 15:25)
  ✔ now that 'choose beer' box is hidden on form submit, add icon on each beer list item to 'add to favorites' @done (15-04-29 16:17)
+ ✔ hide 'saved locations' h2 on page render, show on form submit @done (15-04-30 15:07)
+ ☐ clean up jquery css items in the submit function
+ ☐ Ability to see new updates from listed breweries regarding beer or events
+ ☐ Welcome message for first visit -- Describing product and process (Adding breweries to saved items)
+ ☐ time of update to display
+ ☐ create an array of updates, display as random on keypress
+ ☐ Breweries with string 'No updates' to render at top of list
+ ☐ Populate multiple breweries and updates
+ ☐ Parse and remove any dupicate data
+ ☐ 'Im a brewery' option to add brewery and have it autopopulate checkbox list
+ ☐ pick a new color for the 'beer me' button. it doesn't look right
+ ☐ edit CSS to make 'Updates' more recognizable
